@@ -55,7 +55,7 @@ ROOT_URLCONF = 'team_code.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')], #new
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'mehran_db',
         'USER': 'postgres',
         'PASSWORD': '123',
-        'HOST': '10.0.0.113',
+        'HOST': '10.0.0.110',
         'PORT': '5432',
     }
 }
